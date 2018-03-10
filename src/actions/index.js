@@ -1,0 +1,1 @@
+export const addDeck = require('./addDeck').addDeck
