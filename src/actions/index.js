@@ -1,1 +1,2 @@
-export const addDeck = require('./addDeck').addDeck
+export const cards = require('./cards')
+export const decks = require('./decks')

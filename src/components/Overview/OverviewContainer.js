@@ -1,5 +1,6 @@
 import { connect } from 'react-redux'
 import Overview from '../Overview/Overview'
+import { decks, cards} from '../../actions'
 
 const getVisibleDecks = (decks, filter) => {
   switch (filter) {
@@ -29,13 +30,17 @@ const mapDispatchToProps = dispatch => {
   return {
     onTodoClick: id => {
       dispatch('id') //Todo
-    }
+    },
   }
+}
+
+const actions = {
+  addDeck: decks.addDeck
 }
 
 const OverviewContainer = connect(
   mapStateToProps,
-  mapDispatchToProps
+  actions
 )(Overview)
 
 export default OverviewContainer

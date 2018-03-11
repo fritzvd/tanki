@@ -1,4 +1,4 @@
-import {addCard} from './cards'
+import { addCard, removeCard, updateReviewedDate } from './cards'
 
 it('should add a card', function () {
   const expectedResult = {

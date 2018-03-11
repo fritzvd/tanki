@@ -43,3 +43,31 @@ it('should remove card to deck', () => {
   expect(decks(initialState, removeCard(1, 1)))
     .toEqual(expected)
 })
+
+it('should save the due date', () => {
+  const initialState = [
+    {
+      cards: [
+        {
+          back: 'Goodday',
+          front: 'Dumelang',
+          id: 1
+        }
+      ],
+      deckId: 1
+    }
+  ]
+  const expected = [
+    {
+      cards: [
+        {
+          back: 'Goodday',
+          front: 'Dumelang',
+          id: 1
+        }
+      ],
+      deckId: 1
+    }
+  ]
+
+})

@@ -15,9 +15,12 @@ const initialState = {
 }
 
 export const decks = (state = initialState.decks, action) => {
+  console.log('reduce')
   switch (action.type) {
     case 'ADD_DECK':
       return [...state, action.deck]
+    case 'REMOVE_DECK':
+      return state.filter(deck => action.deckId !== deck.id)
     case 'ADD_CARD':
       return state.map((deck) => (action.deckId) ? {...deck, cards: deck.cards.concat(action.card)} : deck)
     case 'REMOVE_CARD':
