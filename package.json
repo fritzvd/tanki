@@ -5,7 +5,7 @@
   "dependencies": {
     "anki": "git+ssh://git@github.com/fritzvd/anki.js.git",
     "material-ui": "^0.19.4",
-    "moment": "^2.19.1",
+    "moment": "^2.21.0",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "react-redux": "^5.0.6",
